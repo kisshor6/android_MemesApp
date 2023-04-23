@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginBottom="120dp"
+        android:id="@+id/memesPic"/>
+    
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="20dp"
+            android:layout_margin="40dp"
+            android:onClick="shareMeme"
+            android:id="@+id/memesShare"
+            android:src="@drawable/share"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/share"
+            android:background="@drawable/shape"
+             />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="20dp"
+            android:layout_margin="40dp"
+            android:onClick="nextMeme"
+            android:id="@+id/memesNext"
+            android:src="@drawable/next"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/next"
+            android:background="@drawable/shape"
+           />
+
+
+
+</RelativeLayout>
